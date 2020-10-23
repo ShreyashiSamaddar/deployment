@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>WELCOMETO RELATIVE URL TEMPLATES</h1>
+    <!-- <a href="basic_app/other.html">other.html</a> -->
+    <!-- instead of doing that we wanna do -->
+    <a href="{% url 'basic_app:other' %}">other.html</a>
+    <a href="{% url 'admin:index' %}">admin</a>    <!-- python manage.py migrate & python manage.py makemigrations -->
+    <a href="{% url 'index' %}">index</a>
+  </body>
+</html>
